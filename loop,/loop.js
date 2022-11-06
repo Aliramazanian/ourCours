@@ -1,3 +1,10 @@
+//https://www.programiz.com/javascript/for-loop
+//https: //www.programiz.com/javascript/for-loop
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
+
+
+
+
 // انواع حلقه های تکرار در جاوااسکریپت
 // در جاوااسکریپت چندین نوع حلقه تکرار وجود دارد که این حلقه ها به شرح زیر می باشند:
 
@@ -48,17 +55,17 @@
 // let info = 'My cats are called ';
 // const para = document.querySelector('p');
 
-// for (let i = 0; i < cats.length; i++) {
-//     info += cats[i] + ', ';
-// }
-// console.log(info);
-// para.textContent = info;
-// let i = 2;
-// let len = cars.length;
-// let text = "";
-// for (; i < len; i++) {
-//     text += cars[i] + "<br>";
-// }
+for (let i = 0; i < cats.length; i++) {
+    info += cats[i] + ', ';
+}
+console.log(info);
+para.textContent = info;
+let i = 2;
+let len = cars.length;
+let text = "";
+for (; i < len; i++) {
+    text += cars[i] + "<br>";
+}
 
 // const cars = ["BMW", "Volvo", "Saab", "Ford"];
 
@@ -74,6 +81,47 @@ for (let step = 0; step < 5; step++) {
     // Runs 5 times, with values of step 0 through 4.
     console.log('Walking east one step');
 }
+for ([initialExpression];
+    [conditionExpression];
+    [incrementExpression])
+    statement
+
+
+function howMany(selectObject) {
+    let numberSelected = 0;
+    for (let i = 0; i < selectObject.options.length; i++) {
+        if (selectObject.options[i].selected) {
+            numberSelected++;
+        }
+    }
+    return numberSelected;
+}
+
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', () => {
+    const musicTypes = document.selectForm.musicTypes;
+    console.log(`You have selected ${howMany(musicTypes)} option(s).`);
+});
+
+// let i = 0;
+// do {
+//     i += 1;
+//     console.log(i);
+// } while (i < 5);
+
+while (condition)
+    statement
+
+let n = 0;
+let x = 0;
+while (n < 3) {
+    n++;
+    x += n;
+}
+
+
+
 
 for (let i = 0; i < 10; i++) {
     // const element = array[i];
